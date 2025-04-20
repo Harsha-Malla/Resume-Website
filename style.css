@@ -109,8 +109,6 @@ header h1 {
   }
 }
 
-
-
 /* Layout */
 main {
   max-width: 1000px;
@@ -125,6 +123,14 @@ section {
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0,0,0,0.05);
   position: relative;
+  scroll-snap-align: start;
+  scroll-margin-top: 100px;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 h2 {
